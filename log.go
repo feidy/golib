@@ -39,7 +39,7 @@ func init() {
 
 func newLogger(){
 	filePath := getLogFileFullPath()
-	fmt.Println(filepath)
+	fmt.Println(filePath)
 	F = openLogFile(filePath)
 
 	logger = log.New(F, DefaultPrefix, log.LstdFlags)
